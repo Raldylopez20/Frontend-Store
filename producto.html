@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"> <!-- ANEXANDO EL NORMALIZE Y LA HOJA DE ESTILO CON EL INDEX-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub&family=Staatliches&display=swap" rel="stylesheet"> <!--TIPOS DE LETRA DE GOOGLE FONT-->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+    <header class="header">
+
+        <!-- LOS a son links -->
+        <a href="index.html"> <!--esto es un enlace, cada vez que se le de un click al logo nos mandara a la pagina principal-->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo" >
+
+        </a>
+
+    </header>
+
+
+    <!--LOS NAV SON PARA CREAR LA BARRA DE NAVEGACION-->
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a >
+        <a class="navegacion__enlace navegacion__enlace--activ" href="nosotros.html">Nosotros</a> <!--LO DEJE ACTIV PORQUE ASI NO SE MARCA EL NOSOTROS CUANDO LE DOY A ALGUN PRODUCTO-->
+
+    </nav>
+
+    <main class="contenedor">
+
+        <h1>React JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod orci ac quam suscipit,
+                eget consectetur dolor tincidunt Donec faucibus bibendum aliquet Donec faucibus bibendum aliquet. </p>
+
+                <form class="formulario">
+                    <select class="formulario__campo" >
+                        <option disabled selected >-- Seleccione su Talla --</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Overzise</option>
+
+                    </select>
+
+                    <input class="formulario__campo"  type="number" placeholder="cantidad" min="1" >
+                    <input class="formulario__submit" type="submit" value="Agregar Al Carrito">
+
+                </form>
+            </div>
+        </div> 
+
+        
+
+        
+        
+    </main>
+
+
+
+    <footer class="footer">
+
+        <p class="footer__texto">Front End Store - By Raldy Lopez 2023.</p> <!--ESTO ES LO QUE APARECE AL PIE DE PAGINA-->
+
+    </footer>
+
+
+
+
+
+
+ <!--**********************************************************************************************-->   
+</body>
+</html>
